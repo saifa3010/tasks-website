@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<h1 id="main"></h1>
+
+    <script>
+        let drink = prompt('Please enter your favorite drink (coffee, tea, banana, or appel):');
+        let price;
+
+        switch(drink){
+            case "coffee":
+                price = 1;
+                break
+            case "tea":
+                price=2;
+                break
+            case "banana":
+                price=3
+                break
+            case "appel":
+                price=4
+                break
+            default:
+                price ="Sorry, we do not have the price for that drink.";
+            
+
+        }
+        
+
+        if (typeof price === 'number') {
+            document.getElementById("main").innerHTML=(`The price of ${drink} is $${price}.`)
+        } else {
+            document.getElementById("main").innerHTML="Sorry, we do not have the price for that drink.";
+        }
+        
+
+
+    </script>
+</body>
+</html>

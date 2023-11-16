@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task6</title>
+    <style>
+        #ChangeColor {
+            width: 330px;
+            height: 300px;
+            background: blue;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ChangeColor"></div>
+</body>
+<script>
+    function changeColor() {
+        var arr = ["pink", "lightblue", "purple", "orange", "red",'black','white'];
+        document.getElementById("ChangeColor").style.background = arr[Math.floor(Math.random() * arr.length)];
+    }
+    setInterval(changeColor, 1000);
+</script>
+
+</html>

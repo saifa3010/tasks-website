@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0px;
+    background-color: rgb(209, 162, 98);
+}
+
+.banner {
+    background-color: saddlebrown;
+    height: 200px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0px;
+    line-height: 200px;
+}
+
+
+.bodyText {
+    color: #5b120c;
+}
+
+li {
+    padding: 10px;
+    display: inline;
+}
+
+.navBar {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+h2 {
+    padding-left: 5px;
+}
+
+.bodyText {
+    color: #5b120c;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.copyright {
+    width: 100%;
+   
+}
+

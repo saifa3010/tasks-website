@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <script>
+        function calculate() {
+            let x = parseFloat(prompt("Enter x:"));
+            let y = parseFloat(prompt("Enter y:"));
+
+            let result;
+
+            if(x>y){
+            result="Hello World"
+            }
+            else{
+            result="Goodbye"
+            }
+
+            document.getElementById("result").innerHTML = "Result: " + result;
+        }
+    </script>
+</head>
+<body>
+    <h3>Enter the values from here:</h3>
+    <button onclick="calculate()">Compare</button>
+
+    <div id="result"></div>
+</body>
+</html>

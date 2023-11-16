@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <script>
+        function calculate() {
+            const pi = 3.14
+            let r = parseFloat(Math.pow(prompt("Enter radius:"),2));
+           
+
+            let result=pi*r;
+
+        
+            document.getElementById("result").innerHTML = "Result: " + result;
+        }
+    </script>
+</head>
+<body>
+    <h3>Calculate the area of the circle:</h3>
+    <button onclick="calculate()">Enter the radius value from here:</button>
+
+    
+    <div id="result"></div>
+</body>
+</html>

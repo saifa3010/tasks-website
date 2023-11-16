@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: pink;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+
+}
+
+.Article1{
+    background-color: gray;
+    padding: 20px;
+    margin: 20px;
+}
+.overflow{
+    overflow: scroll;
+    width: 1340px;
+    height: 80px;
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    border: solid 1px;
+    
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+.Article2{
+    background-color: gray;
+    padding: 20px;
+    margin: 20px;
+}

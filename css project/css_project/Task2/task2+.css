@@ -1,0 +1,151 @@
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+} 
+
+.container { 
+    width: 320px; 
+    height: 480px; 
+    background: #fff; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    border-radius: 7px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly; 
+    padding: 16px; 
+} 
+  
+.input { 
+    position: relative; 
+    width: 100%; 
+    height: 50px; 
+    margin-bottom: 17px; 
+} 
+  
+.input-f input{ 
+    width: 100%; 
+    height: 50px; 
+    padding-top: 20px; 
+    padding-left: 9px; 
+    border: 1px solid #8c8c8c; 
+    border-radius: 3px; 
+    transition: .2s; 
+} 
+  
+header {
+    background-color:#eadfdf ;
+    width: 100%;
+    position: fixed;
+    z-index: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px ;
+    border-bottom: solid 2px;
+    border-color:#f0f0f0;
+    
+}
+a{
+    text-decoration: none;
+}
+  
+
+
+
+.input input:focus ~ label
+{ 
+    top: 10%; 
+    font-size: 15px; 
+    color: #000; 
+} 
+  
+
+  
+button { 
+    height: 50px; 
+    background: #0A66C3; 
+    outline: none; 
+    border: none; 
+    color: #fff; 
+    font-size: 16px; 
+    font-weight: bolder; 
+} 
+.btn{
+    height: 50px; 
+    background: #ffffff; 
+    border-style:  solid ; 
+    border-radius: 30px; 
+    color: #5e5c5c; 
+    font-size: 16px; 
+    border-width: 1px;
+    border-color: #8c8c8c;
+
+}
+  
+.join{
+
+    margin-top: 530px;
+    display: flex; 
+    justify-content: center;
+}
+.join-link { 
+   text-decoration: none; 
+   font-weight: bolder; 
+   color: #0A66C3;  
+} 
+  
+.join-now{ 
+    text-decoration: none; 
+    font-weight: bolder; 
+    color: #0A66C3;  
+    border-radius: 12px; 
+    transition: .3s; 
+    font-weight: bolder; 
+    padding: .2rem; 
+} 
+  
+.join-now:hover{ 
+    background: rgba(10, 102, 195, 0.3);    
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.item {
+    width: 50%; /* Each item takes up 50% of the container width */
+    font-size: 13px;
+    padding: -4px;
+}
+
+@media screen and (min-width: 600px) {
+    .item {
+        width: 10%; /* On desktop screens, each item takes up 10% of the container width */
+    }
+}
+
+
+
+.p-or { 
+    display: flex; 
+    flex-direction: row; 
+    font-size: 20px;
+} 
+  
+.p-or:before, 
+.p-or:after { 
+    content: ""; 
+    flex: 1 1; 
+    border-bottom: 2px solid #a0a0a0; 
+    margin: auto;
+
+    
+} 

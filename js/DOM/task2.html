@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2</title>
+</head>
+<body>
+
+  <label for="imageSelector">Select an image:</label>
+  <select id="imageSelector">
+    <option value="image/jo.jpg">JO</option>
+    <option value="image/ja.png">JA</option>
+    <option value="image/ki.png">KI</option>
+    <option value="image/ph.png">PHS</option>
+    <option value="image/tu.png">TU</option>
+
+  </select>
+
+  <br>
+
+  <img id="displayedImage" src="image/jo.jpg" alt="Displayed Image">
+
+  <script>
+    let imageSelector = document.getElementById('imageSelector');
+    let displayedImage = document.getElementById('displayedImage');
+
+    imageSelector.addEventListener('change', function() {
+      displayedImage.src = imageSelector.value;
+    });
+  </script>
+
+</body>
+</html>
+
+</body>
+</html>
+

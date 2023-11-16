@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+    <label for="password">Password (min 6 characters)</label>
+    <input style="margin-bottom: 20px;" type="password" id="password1">
+    <span id="Message" style="color: red;"s></span><br>
+    
+
+    <label for="password">Repeat Password</label>  
+    <input type="password" id="password2"> <span id="warningMessage" style="color: red;"></span>
+
+
+
+    <script>
+        addEventListener('input',function Repeat_Password(){
+            let passwordInput1 = document.querySelector('#password1');
+            let passwordInput2 = document.querySelector('#password2');
+            let warningMessage = document.querySelector('#warningMessage');
+            let Message = document.querySelector('#Message');
+
+            if (passwordInput1.value.length < 6) {
+                Message.textContent = "Short password";
+            } else {
+                Message.textContent = "";
+            }
+
+
+
+            if (passwordInput2.value !== passwordInput1.value && passwordInput2.value.length > 1 ){
+                warningMessage.textContent="warning"
+            }
+            else if (passwordInput2.value === passwordInput1.value){
+                warningMessage.textContent=""
+                let submit = document.createElement("input")
+                submit.setAttribute("type","submit")
+                document.body.appendChild(submit)
+
+            }
+
+            
+        } )
+    </script>
+</body>
+</html>

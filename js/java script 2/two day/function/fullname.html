@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<h1 id="main"></h1>
+
+    <script>
+        
+        
+      function fullName(firstName,lastName){
+        firstName=(prompt("please enter first Name"));
+        lastName=(prompt("please enter last Name"));
+      return `${firstName} ${lastName}`;
+      }
+      let  name= fullName();
+      console.log(name);
+      document.getElementById("main").innerHTML = name;
+    </script>
+</body>
+</html>

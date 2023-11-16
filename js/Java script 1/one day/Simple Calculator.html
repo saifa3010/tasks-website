@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <script>
+        function calculate() {
+            let operation = prompt("Enter operation (+, -, *, /):");
+            let num1 = parseFloat(prompt("Enter first number:"));
+            let num2 = parseFloat(prompt("Enter second number:"));
+
+            let result;
+
+            if (operation == "+") {
+                result = num1 + num2;
+            } else if (operation == "-") {
+                result = num1 - num2;
+            } else if (operation == "*") {
+                result = num1 * num2;
+            } else if (operation == "/") {
+                result = num1 / num2;
+            }
+
+            document.getElementById("operationDisplay").innerHTML = "Operation: " + operation;
+            document.getElementById("num1").innerHTML = "First number: " + num1;
+            document.getElementById("num2").innerHTML = "Second number: " + num2;
+            document.getElementById("result").innerHTML = "Result: " + result;
+        }
+    </script>
+</head>
+<body>
+    <h3>Enter the values from here:</h3>
+    <button onclick="calculate()">Calculate</button>
+
+    <div id="operationDisplay"></div>
+    <div id="num1"></div>
+    <div id="num2"></div>
+    <div id="result"></div>
+</body>
+</html>

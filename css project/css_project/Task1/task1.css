@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+}
+
+table,th,td{
+    border: 1px solid;
+ 
+}
+table{
+    width: 60%;
+    margin-top: 30px;
+}
+
+#head{
+    text-align: right;
+    background-color: yellow;
+}
+#col1{
+    background-color: pink;
+    text-align: center;
+}
+
